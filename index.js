@@ -27,17 +27,17 @@ function handleClick(event){
       boxElement[id-1].appendChild(ptag)
       
       if(click%2==0){
-        ptag.textContent="x"
+        ptag.textContent="X"
         click++;
         xAttempts.push(parseInt(id));
-        result(xAttempts,"x")
+        result(xAttempts,"X")
 
       }
       else {
-        ptag.textContent="o"
+        ptag.textContent="O"
         click++
         oAttempts.push(parseInt(id))
-        result(oAttempts,"o")
+        result(oAttempts,"O")
       }
       if(click==9 && isWon==false){
         resultBox.style.visibility="visible"
